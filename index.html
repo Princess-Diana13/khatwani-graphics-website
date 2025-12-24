@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khatwani Graphics - Home</title>
+    <style>
+    body { font-family: Georgia, serif; background: linear-gradient(135deg, #F5F5DC, #FDF6E3); color: #654321; margin: 0; padding: 0; }
+    header { background: linear-gradient(to right, #DAA520, #E6B800); padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    header h1 { font-size: 2.5em; color: #8B4513; text-shadow: 2px 2px 4px rgba(255,255,255,0.8); margin: 0; }
+    nav { background: #8B4513; padding: 15px; text-align: center; }
+    nav a { color: #FDF6E3; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 1.1em; padding: 10px 15px; display: inline-block; background: rgba(255,255,255,0.1); border-radius: 8px; transition: all 0.3s; }
+    nav a:hover { color: #DAA520; background: rgba(255,255,255,0.3); }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    
+    /* HERO BANNER */
+    .hero-banner { background: linear-gradient(135deg, rgba(218,165,32,0.9), rgba(230,184,0,0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="8" fill="%23FFF" opacity="0.3"/><circle cx="80" cy="30" r="6" fill="%23FFF" opacity="0.2"/></svg>'); 
+                   padding: 80px 20px; text-align: center; color: white; margin-bottom: 40px; border-radius: 25px; box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
+    .hero-banner h2 { font-size: 3.5em; margin-bottom: 20px; text-shadow: 3px 3px 6px rgba(0,0,0,0.5); }
+    .hero-cta { background: rgba(255,255,255,0.9); color: #8B4513; padding: 20px 40px; border-radius: 50px; font-size: 1.4em; font-weight: bold; display: inline-block; margin-top: 20px; text-decoration: none; transition: all 0.3s; box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+    .hero-cta:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.3); }
+    
+    /* DEALS SECTION */
+    .deals { background: rgba(255,255,255,0.95); padding: 50px 40px; border-radius: 25px; margin: 40px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    .deals h3 { text-align: center; font-size: 2.5em; margin-bottom: 40px; color: #8B4513; }
+    .deals-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .deal-card { background: linear-gradient(135deg, #FFF8DC, #FDF6E3); padding: 30px; border-radius: 20px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.1); position: relative; }
+    .deal-badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #DAA520; color: white; padding: 10px 25px; border-radius: 25px; font-weight: bold; font-size: 1.1em; }
+    .deal-price { font-size: 2.5em; color: #DAA520; font-weight: bold; margin: 15px 0; }
+    .deal-old { text-decoration: line-through; color: #999; font-size: 1.2em; }
+    
+    /* ORIGINAL 3 PRODUCTS */
+    .featured { padding: 60px 40px; background: rgba(255,255,255,0.9); border-radius: 25px; margin: 40px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    .featured h3 { text-align: center; font-size: 2.5em; margin-bottom: 40px; color: #8B4513; }
+    .featured-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .product-card { background: white; padding: 30px; border-radius: 15px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .product-card:hover { transform: translateY(-8px); }
+    .product-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
+    .product-price { font-size: 1.8em; color: #DAA520; font-weight: bold; }
+    
+    footer { background: #8B4513; color: #FDF6E3; text-align: center; padding: 30px; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌸 Khatwani Graphics 🌸</h1>
+        <p>#1 Stationery Supplier in Al Wakrah</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">📚 About</a>
+        <a href="products.html">🛍️ Products</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
+    
+    <div class="container">
+        <!-- MASSIVE HERO BANNER -->
+        <div class="hero-banner">
+            <h2>🎒 BACK TO SCHOOL SALE! 🎒</h2>
+            <p><strong>50% OFF Notebooks + FREE Delivery Over QAR 100!</strong></p>
+            <p style="font-size: 1.3em; margin-top: 20px;">Limited stock - Hurry! 500+ students already ordered today!</p>
+            <a href="products.html" class="hero-cta">🛒 SHOP NOW →</a>
+        </div>
+        
+        <!-- HOT DEALS -->
+        <div class="deals">
+            <h3>🔥 TODAY'S HOT DEALS 🔥</h3>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <div class="deal-badge">BESTSELLER</div>
+                    <h3>A4 Notebook Pack (5pcs)</h3>
+                    <p>Exam quality • Single line</p>
+                    <div class="deal-price">QAR 22 <span class="deal-old">QAR 35</span></div>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">50% OFF</div>
+                    <h3>HB Pencils (36pcs)</h3>
+                    <p>Grade 10 perfect</p>
+                    <div class="deal-price">QAR 15 <span class="deal-old">QAR 30</span></div>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">NEW!</div>
+                    <h3>Geometry Box Set</h3>
+                    <p>Complete math kit</p>
+                    <div class="deal-price">QAR 18</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- YOUR ORIGINAL 3 PRODUCTS -->
+        <div class="featured">
+            <h3>⭐ TOP PICKS ⭐</h3>
+            <div class="featured-grid">
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71gbfFwUg8L.jpg? w=400" alt="Notebooks">
+                    <h4>Premium Notebooks</h4>
+                    <p>A4, A5, spiral & hardcover</p>
+                    <div class="product-price">QAR 5.99</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-cdn.ubuy.qa/634f8f77b48a5829eb454614-gel-pens-glitter-gel-pen-for-adult.jpg? w=400" alt="Pens">
+                    <h4>Art & Writing</h4>
+                    <p>Markers, gel pens, pencils</p>
+                    <div class="product-price">QAR 7.50</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://i5.walmartimages.com/seo/Desk-Organizer-5-tier-Paper-Letter-Tray-Organizer-File-Holder-Drawer-Pen-Holder-Organizers-Accessories-Woman-Office-Organization-Supplies-Rose-Gold_cbbc408b-3747-407e-b87b-a20564aea581.d0490b26875f0a2f2da293b044740cf0.jpeg? w=400" alt="Office">
+                    <h4>Office Essentials</h4>
+                    <p>Staplers, files, sticky notes</p>
+                    <div class="product-price">QAR 9.99</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2025 Khatwani Graphics | 📞 +974 5556 0137 | 🌺 Free Delivery Over QAR 100
+    </footer>
+</body>
+</html>
